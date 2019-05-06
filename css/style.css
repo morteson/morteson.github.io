@@ -1,0 +1,312 @@
+html,
+* {
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+p{
+    font-family: roboto light;
+}
+
+h1{
+    font-family: playfair display black;
+}
+/* < 576px => 100% */
+.section {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.container {
+    min-height: 100vh;
+border: 1px solid #000;
+}
+
+/* 540px */
+@media (min-width: 576px) {
+    .section {
+        grid-template-columns: 1fr 540px 1fr;
+    }
+
+    .container,
+    .navbar {
+        grid-column-start: 2;
+        grid-column-end:3;
+    }
+}
+
+
+/* 720px */
+@media (min-width: 768px) {
+    .section {
+        grid-template-columns: 1fr 720px 1fr;
+    }
+}
+
+/* 960px */
+@media (min-width: 992px) {
+    .section {
+        grid-template-columns: 1fr 960px 1fr;
+    }
+}
+
+/* 1140px */
+@media (min-width: 1200px) {
+    .section {
+        grid-template-columns: 1fr 1140px 1fr;
+    }
+}
+
+.section {
+    
+     border-color: white;
+    
+   
+}
+
+. home{
+    display: grid;
+     
+
+}
+
+
+
+.home {
+    background-image: url("../img/CabMin.jpg");
+    height:100 vh;
+    width: 100%;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    
+    display: grid;
+
+    grid-template-columns: 1fr 4fr 3fr 1fr;
+    border-color: white;
+    
+   
+}
+
+
+
+
+
+
+
+
+
+.home.section .container { 
+    display:grid
+     border: 1px white solid;
+    
+
+}
+    
+    
+
+ .imglogo{
+     
+    display: grid;
+    background-image: url("../img/CURSED_Logo.png");
+    background-repeat: no-repeat; 
+    
+  
+height:80vh;
+    width: 100vh;
+ grid-column-start:2;
+    grid-column-end:4;
+  
+}
+
+
+
+
+.about.section{
+    
+     background-image: url("../img/fruts.jpg");
+    height:100 vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+   
+
+.about .container{
+   
+    display: grid; 
+    grid-template-columns:3fr 6fr 3fr;
+    grid-template-rows: 2fr 4fr 2fr;
+   
+}
+
+.wtf{
+    display: grid;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    color: white;
+}
+
+.project .container{
+    display: grid; 
+    grid-template-columns:1fr 4fr 2fr 1fr 9fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 3fr 2fr 1fr 4fr;
+    
+}
+
+.philosophy{
+    display:grid;
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end:4;
+}
+
+.bo{
+    font-size: 7rem;
+    font-family: playfair display bold;
+    letter-spacing: 15px;
+    grid-column-start: 2;
+    grid-column-end:;
+    grid-row-start: 2
+}
+
+
+.dy{
+    font-size: 7rem;
+    letter-spacing: 20px;
+    font-family: playfair display bold;
+    grid-column-start: 3;
+    grid-column-end:3;
+    grid-row-start: 2;
+}
+
+
+
+.lemons{
+    display: grid;
+    background-image:url("../img/lemonnnnne.jpg");
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+        
+     grid-row-start:2;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end:7;
+    
+}
+
+
+.portfolio.section {}
+
+
+
+.contacts.section {}
+
+
+
+header {
+    position:fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column-start:1;
+    grid-column-end:3;
+    
+}
+
+.navbar .logo {
+    color: #ff0027;
+     text-decoration:none;
+    margin-left: 30px;
+    font-family: playfair display;
+    font-size: 1.5rem
+    
+    
+   
+}
+
+.navbar .navmenu,
+.navbar .navmenu li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .navmenu {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.navbar .navmenu a {
+    display: block;
+    padding: 1em 2em;
+    text-decoration: none;
+    font-family: roboto ;
+    color: white;
+    
+}
+
+.navbar .navmenu a:hover {
+   text-decoration:line-through;
+}
+
+.wrapped{
+    display: grid;
+    
+    width: 100%;
+    
+}
+
+ .three{
+    background-color: black;
+     color: white;
+}
+
+.four{
+    background-color: black;
+     color: white;
+}
+
+.author{
+    display: grid;
+    color: white;
+    background-color: #ff0031;
+    grid-template-columns:  3fr 2fr 1fr;
+    grid-column-gap:15px;
+    
+   
+    
+}
+
+.myself{
+    display: grid;
+    grid-column-start: ;
+    width: 50vw;
+}
+
+.author h2{
+    color: black;
+}
+
+.contacts{
+    background-color: black;
+    color: white;
+    
+}
+
